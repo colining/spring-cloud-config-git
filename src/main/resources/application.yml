@@ -6,6 +6,21 @@ spring:
       server:
         git:
           uri: https://github.com/colining/config-repo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: demo
+    password: demo
 
 server:
   port: 1111
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+management:
+  security:
+    enabled: false
